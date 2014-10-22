@@ -11,7 +11,7 @@
 # There were some errors in the original source that this corrects
 ########################################
 # Assumes:
-#    user path is $USER 
+#    user name is $USER 
 #    MLPostFactor0.3 unzipped to desktop
 #        dl'd from http://macdownload.informer.com/mlpostfactor/download/?cf2263c
 #    'Install OS X Mountain Lion.app' downloaded and present in /Users/$USER/Applications/
