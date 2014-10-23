@@ -6,7 +6,7 @@
 # Patrick Herron 
 # 22 October 2014
 ########################################
-# upgrade 10.6.8 to 10.8 using MLPostFactor 0.3
+# upgrade 10.6.8 to 10.8.4 using MLPostFactor 0.3
 # Based on http://www.vladkorotnev.me/blog/install-mlpostfactor-from-snow-leopard/
 # There were some errors in the original source that this corrects
 ########################################
@@ -27,4 +27,11 @@ cd /Users/$USER/Desktop/MLPostFactorV0.3/MLPostFactor.app/Contents/Resources/MLP
 
 sudo installer -package Base.mpkg -target $INMNT
 
-for PACKAGE in Components.mpkg Graphics.mpkg Kernel.mpkg ;  do sudo installer -package $PACKAGE -target $INMNT; done
+for PACKAGE in Components.mpkg Graphics_2.mpkg Kernel.mpkg ;  do sudo installer -package $PACKAGE -target $INMNT; done
+
+# after this step the install may fail without any notice; 
+# reboot with the option key back to the Install drive;
+# select the MLPostFactor option from the Utilities menu
+# follow the prompts on MLPostFactor
+#     - select your MountainLion partition
+#     - select 10.8.4
